@@ -1,0 +1,21 @@
+{
+  "name": "cms-project",
+  "version": "1.0.0",
+  "description": "A simple CMS backend with admin login using Node.js and Express",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [ "cms", "nodejs", "express", "admin", "login" ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "body-parser": "^1.20.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
