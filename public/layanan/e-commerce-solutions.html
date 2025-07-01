@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gares Setjahtera Abadi</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body class="body body d-flex flex-column min-vh-100">
+
+	<!-- Navigation Bar -->
+	<nav class="navbar navbar-expand-lg navbar-light custom-navbar bg-white">
+		<div class="container-fluid">
+			<!-- Navbar Brand -->
+			<a class="navbar-brand d-flex align-items-center" href="index.html">
+				<img src="https://placehold.co/25x25" alt="Logo" style="height: 25px; margin-right: 10px;">
+				Gares Setjahtera Abadi
+			</a>
+			<!-- Mobile Navbar Menu Enabler -->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<!-- Navbar Items -->
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+				<ul class="navbar-nav nav-fill">
+					<li class="nav-item">
+						<a class="nav-link" href="../index.html">Beranda</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="../layanan.html">Layanan</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../portofolio.html">Portofolio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../tentang-kami.html">Tentang Kami</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../Blog.html">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../kontak.html">Kontak</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Breadcrumbs -->
+	<div class="px-4 pt-3">
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="../index.html">Beranda</a></li>
+				<li class="breadcrumb-item"><a href="../layanan.html">Layanan</a></li>
+				<li class="breadcrumb-item active" aria-current="page">E-Commerce Solutions</li>
+			</ol>
+		</nav>
+	</div>
+
+	<!-- Banner -->
+	<section id="services" class="pt-3 pb-2">
+		<div class="container px-5">
+			<div class="banner-wrapper mb-4 text-center">
+				<div class="banner-img-container">
+					<img src="../img/support.jpg" class="banner-img" alt="banner image">
+				</div>
+			</div>
+			<h2 class="text-center mt-4 mb-2" style="color: #0953a2;"><strong>E-Commerce Solutions</strong></h2>
+		</div>
+	</section>
+
+	<!-- Service Details -->
+	<section class="py-3">
+		<div class="container px-5">
+			<p class="lighttext">
+				Kami membangun etalase daring yang aman, berskala luas, dan ramah pengguna
+				yang mendorong penjualan dan meningkatkan pengalaman pelanggan.
+				Dari sistem manajemen produk hingga integrasi pembayaran yang lancar,
+				kami menyesuaikan platform e-dagang agar sesuai dengan merek dan sasaran bisnis Anda.
+			</p>
+
+			<div class="row mt-4" style="color:#0953a2;">
+				<div class="col-md-6">
+					<ul>
+						<li>Diagnostik dan audit bisnis</li>
+						<li>Pengembangan peta jalan strategis</li>
+						<li>Dukungan manajemen perubahan</li>
+					</ul>
+				</div>
+				<div class="col-md-6">
+					<ul>
+						<li>Peningkatan proses</li>
+						<li>Konsultasi keuangan dan risiko</li>
+						<li>Riset dan analisis pasar</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact -->
+	<section class="text-center py-5">
+		<div class="container">
+			<h4 class="darktext">Penasaran? Hubungi kami sekarang!</h4>
+			<p class="lighttext">Kontak Kami untuk bahas lebih lanjut dan menentukan waktu untuk meeting.</p>
+			<a href="../kontak.html" class="btn btn-outline-primary btn-lg mt-2">Hubungi Kami</a>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="mt-auto bg-dark text-white text-center py-3">
+		<p>&copy; 2025 Gares Setjahtera Abadi. All rights reserved.</p>
+	</footer>
+
+	<!-- Scripts -->
+	<script type="module">
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
+		import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-analytics.js";
+		// TODO: Add SDKs for Firebase products that you want to use
+		// https://firebase.google.com/docs/web/setup#available-libraries
+
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		const firebaseConfig = {
+			apiKey: "AIzaSyBEuJ8dLl7HAH8kd3ktGbpUQ0_GZe_x1KM",
+			authDomain: "test-3dd10.firebaseapp.com",
+			projectId: "test-3dd10",
+			storageBucket: "test-3dd10.firebasestorage.app",
+			messagingSenderId: "516115412764",
+			appId: "1:516115412764:web:d3f44d313654d758cc6cd9",
+			measurementId: "G-Q2KW14590V"
+		};
+
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const analytics = getAnalytics(app);
+	</script>
+	<script src="../js/jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

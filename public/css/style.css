@@ -1,0 +1,298 @@
+/* style.css */
+
+/* Scroll */
+html {
+	scroll-behavior: smooth;
+}
+
+/* Font */ 
+	@font-face {
+		font-family: 'Poppins-Thin';
+			src: url('../fonts/Poppins-Thin.ttf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'Poppins-Light';
+			src: url('../fonts/Poppins-Light.ttf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	.headtext {
+		font-family: 'Poppins-Thin';
+		color: #0953a2;
+	}
+
+	.body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		font-family: 'Poppins-Light';
+	}
+
+/* Login Page Backend */ 
+	.login-body {
+		background-color: #f5f5f5;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+	}
+
+	.login-box {
+		max-width: 400px;
+		width: 100%;
+		padding: 2rem;
+		background: white;
+		border-radius: 10px;
+		box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	}
+
+/* Font Color */
+	.darktext	{
+		font-size: 25px;
+		color: #0953a2;
+	}
+
+	.lighttext	{
+		font-size: 20px;
+		color: #4793e5;
+	}
+
+/* Spacing */
+	.section-spaced {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	.custom-navbar {
+		border: 2px, solid #0953a2; /* Your desired color */
+	}
+
+/* Banner image */
+	.banner-img-container {
+		width: 100%;
+		max-width: 1200px !important; /* adjust for max banner width */
+		margin: 0 auto;
+	}
+
+	.banner-img {
+		display: block;
+		max-width: 100%;
+		height: 300px !important; /* adjust for max banner height */
+		object-fit: cover;
+		margin: 0 auto;
+	}
+
+	.banner-wrapper h2 {
+		font-weight: bold;
+	}
+
+	.banner-wrapper p {
+		font-size: 1.1rem;
+	}
+
+/* Hero */
+	.hero {
+		height: 100vh;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.hero-bg-img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		z-index: 0;
+	}
+
+	.hero-content {
+		z-index: 1;
+		color: #0953a2;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+/* Navbar */
+	.navbar-brand {
+		color: #0953a2 !important;
+	}
+	
+	.navbar .nav-link {
+		color: #4793e5 !important;
+	}
+	
+	.navbar .nav-link:hover {
+		color: #0953a2 !important;
+	}
+	
+	.nav-link.active {
+		font-weight: bold;
+		color: #0953a2 !important;
+	}
+
+/* Button */
+	.btn-outline-primary {
+		color: #0953a2;
+		border-color: #0953a2;
+	}
+
+	.btn-outline-primary:hover {
+		background-color: #0953a2;
+		color: white;
+		border-color: #0953a2;
+	}
+
+/* layanan card */
+	.layanan-card {
+		cursor: pointer;
+		padding: 20px;
+		transition: transform 0.3s, box-shadow 0.3s ease;
+		border: 1px solid #0953a2;
+		border-radius: 20px;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		background-color: white;
+	}
+
+	.layanan-card:hover {
+			transform: scale(1.025);
+			box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+			background-color: #e3f2fd;
+			color: #0953a2;
+			cursor: pointer;
+		}
+
+/* Carousel */
+	/* Carousel Indicator*/
+		.carousel-indicators {
+			top: -35px; /* position from top */
+			bottom: auto; /* disable bottom positioning */
+		}
+
+		.carousel-indicators [data-bs-target] {
+			height: 10px;
+			width: 40px;
+			margin: 0 5px;	
+			background-color: #0953a2; /* your custom color */
+			opacity: 0.5;
+		}
+
+	/* Change active indicator color */
+		.carousel-indicators .active {
+			background-color: #0953a2; /* highlight color for active */
+			opacity: 1;
+		}
+
+	/* Carousel Content*/
+		.carousel-inner {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		.carousel-inner img {
+			height: 100%;
+			position: relative;
+			overflow: hidden;
+			object-fit: cover; /* Cover fills the area; use 'contain' to show full image */
+		}
+		
+	/* Carousel Controls*/
+		.custom-carousel-control {
+			top: 50%;
+			transform: translateY(-60%);
+			width: 3%;
+			background: rgba(0, 0, 0, 0.2); /* Optional: adds a light background */
+		}
+
+		.carousel-control-prev {
+			background-color: #0953a2;
+			left: -40px; /* Adjust this value as needed */
+		}
+
+		.carousel-control-next {
+			background-color: #0953a2;
+			right: -40px; /* Adjust this value as needed */
+		}
+
+/* portofolio image */
+
+/* Blog */
+	.card {
+		border-radius: 0 !important;
+		border: 1px solid #0953a2;
+	}
+
+	.card img {
+		border-radius: 0 !important;
+		height: 200px;
+		object-fit: cover;
+	}
+
+	.card-body {
+		border-radius: 0 !important;
+	}
+
+	.portofolio-card {
+		border-radius: 0 !important;
+		position: relative;
+		overflow: hidden;
+		max-width: 600px;
+		max-height: 400px;
+	}
+
+	.portofolio-image {
+		border-radius: 0 !important;
+		width: 100%;
+		height: auto;
+		display: block;
+		transition: transform 0.5s ease;
+	}
+
+	.portofolio-card:hover .portofolio-image {
+		transform: scale(1.025);
+	}
+
+	.overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+		opacity: 0;
+		transition: opacity 0.5s ease;
+	}
+
+	.portofolio-card:hover .overlay {
+		opacity: 1;
+	}
+
+	.overlay-text {
+		font-size: 1.25rem;
+		opacity: 0;
+		transition: opacity 0.3s ease;
+	}
+
+	.portofolio-card:hover .overlay-text {
+		opacity: 1;
+	}
+
+/* Google maps */
+	.full-width-map {
+		width: 100vw;
+		margin: 0 auto;
+		display: block;
+		border: none;
+	}
+

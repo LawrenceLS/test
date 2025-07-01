@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0953a2;
+            color: white;
+            padding: 1rem 2rem;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .logout-btn {
+            float: right;
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+            .logout-btn:hover {
+                background-color: #bb2d3b;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome, Admin</h1>
+        <form action="/admin/logout" method="POST" style="display:inline;">
+            <button type="submit" class="logout-btn">Logout</button>
+        </form>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>Manage Posts</h2>
+            <p>Create, edit, or delete blog posts and content.</p>
+            <a href="/admin/posts">Go to Posts</a>
+        </div>
+
+        <div class="card">
+            <h2>Media Library</h2>
+            <p>Upload or manage images, PDFs, and other assets.</p>
+            <a href="/admin/media">Open Media Library</a>
+        </div>
+
+        <div class="card">
+            <h2>Settings</h2>
+            <p>Manage user accounts and application settings.</p>
+            <a href="/admin/settings">Settings</a>
+        </div>
+    </main>
+</body>
+</html>
